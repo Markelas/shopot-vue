@@ -1,10 +1,14 @@
+<template>
+  <div class="header__box">
+    <ShopotIcon class="header__box--icon"/>
+  </div>
+</template>
+
 <script setup>
 
+import ShopotIcon from "@/components/icons/ShopotIcon.vue";
 </script>
 
-<template>
-  $END$
-</template>
 
 <style scoped>
 
