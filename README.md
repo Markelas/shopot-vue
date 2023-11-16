@@ -1,7 +1,7 @@
 # shopot-vue
 ## Приложение, где можно перейти к определенной фразе в видео, используя текст. Выполненно с помощью Vue js 3 версии, SCSS, Axios
 
-## Приложение доступно по ссылке: [Link to Shopot app](https://nuxt-mark-music-app.web.app/)
+## Приложение доступно по ссылке: https://nuxt-mark-music-app.web.app/
 
 ![image](https://github.com/Markelas/shopot-vue/assets/95120171/80edab4c-84e2-4bd4-9cd9-201fc51bf8bf)
 
