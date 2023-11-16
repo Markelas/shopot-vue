@@ -69,8 +69,11 @@ h1, h2, h3, h4 {
 }
 .text__block__text:hover {
   cursor: pointer;
-  text-decoration: none; /* Убираем подчёркивание */
   background: rgba(101, 73, 73, 0.22); /* Цвет фона */
+  border-radius: 10px;
+}
+.text__block__text--active {
+  background: rgba(218, 245, 41, 0.29); /* Цвет фона */
   border-radius: 10px;
 }
 

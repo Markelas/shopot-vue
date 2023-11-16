@@ -4,7 +4,7 @@ export const useTextStore = defineStore('text', {
     state: () => ({
         textInfoObj : {},
         arrayBySpeakers :[],
-        speakers: 1,
+        isPlaying: false
     }),
     getters: {
         filterTextBySpeakers () {
@@ -35,5 +35,9 @@ export const useTextStore = defineStore('text', {
                 console.error(error)
             }
         },
+        isToggleVideo() {
+            console.log(this.isPlaying)
+            this.isPlaying = !this.isPlaying
+        }
     },
 })
