@@ -60,16 +60,17 @@ h1, h2, h3, h4 {
     font-size: 15px;
     line-height: 22px;
   }
-}
-
-/*-----------------------*/
-.video__box{
-  width: 430px ;
-  max-height: 278px;
-  padding: 20px;
-  border-radius: 12px;
-  background-color: white;
-  margin: 0 17px;
+  &__row{
+    padding: 10px 0;
+  }
+  &__text{
+    &:hover{
+      cursor: pointer;
+      text-decoration: none; /* Убираем подчёркивание */
+      background: rgba(101, 73, 73, 0.22); /* Цвет фона */
+      border-radius: 10px;
+    }
+  }
 }
 #element::-webkit-scrollbar {
   width: 10px;
@@ -86,6 +87,17 @@ h1, h2, h3, h4 {
   border-radius: 10px;
   background-color: #f9f9fd;
 }
+
+/*-----------------------*/
+.video__box{
+  width: 430px ;
+  max-height: 278px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  margin: 0 17px;
+}
+
 .video__player{
   border-radius: 10px;
 }

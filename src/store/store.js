@@ -4,7 +4,7 @@ export const useTextStore = defineStore('text', {
     state: () => ({
         textInfoObj : {},
         arrayBySpeakers :[],
-        speakers: 1
+        speakers: 1,
     }),
     getters: {
         filterTextBySpeakers () {
@@ -22,7 +22,6 @@ export const useTextStore = defineStore('text', {
                     textObjectsArray.push(el)
                 }
             })
-            console.log(this.arrayBySpeakers)
         },
     },
     actions: {
