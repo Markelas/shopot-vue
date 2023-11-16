@@ -1,4 +1,8 @@
 # shopot-vue
+## Приложение, где можно перейти к определенной фразе в видео, используя текст. Выполненно с помощью Vue js 3 версии, SCSS, Axios
+
+![image](https://github.com/Markelas/shopot-vue/assets/95120171/80edab4c-84e2-4bd4-9cd9-201fc51bf8bf)
+
 
 ## Project setup
 ```
