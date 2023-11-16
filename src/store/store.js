@@ -35,9 +35,5 @@ export const useTextStore = defineStore('text', {
                 console.error(error)
             }
         },
-        isToggleVideo() {
-            console.log(this.isPlaying)
-            this.isPlaying = !this.isPlaying
-        }
     },
 })

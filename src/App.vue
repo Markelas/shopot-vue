@@ -1,7 +1,6 @@
 <template>
   <HeaderApp/>
   <div class="app_wrapper">
-    <div class="app__content"></div>
     <TextApp />
     <VideoApp/>
   </div>

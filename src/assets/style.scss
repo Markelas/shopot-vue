@@ -34,13 +34,19 @@ h1, h2, h3, h4 {
   display: flex;
 }
 
-
 /*--------------------*/
 
 .header__box {
   height: 60px;
   background-color: white;
   padding: 11px 12px 10px 20px;
+  display: flex;
+  &__link{
+    padding: 6px;
+    margin-left: 20px;
+    color: black;
+    font-weight: 600;
+  }
 }
 .header__box--icon{
   margin: 7px 0;
@@ -48,12 +54,13 @@ h1, h2, h3, h4 {
 
 /*-----------------------*/
 .text__block{
-  width: 737px;
+  max-width: 737px;
   max-height: 578px;
   background-color: white;
   border-radius: 12px;
   padding: 24px 24px 20px 24px;
   overflow-y: scroll;
+  margin-left: 20px ;
   &__time{
     color: #AAA;
     width: 64px;
@@ -105,3 +112,19 @@ h1, h2, h3, h4 {
   border-radius: 10px;
 }
 
+@media (max-width: 1000px) {
+  .app_wrapper{
+    max-width: 1240px;
+    margin: 70px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .video__box{
+    order: 1;
+  }
+  .text__block{
+    order: 2;
+    margin: 20px;
+  }
+}

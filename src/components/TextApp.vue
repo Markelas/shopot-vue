@@ -15,7 +15,6 @@
 <script>
 import {useTextStore} from "@/store/store";
 import OneTextBySpeaker from "@/components/OneTextBySpeaker.vue";
-import {reactive, ref} from 'vue'
 
 export default {
   name: 'TextApp',
@@ -30,16 +29,11 @@ export default {
   },
   async mounted() {
     await this.textStore.getTextInfo()
-    console.log('mounted')
     this.currentTime
     setInterval(()=> {
         this.activeTime = document.getElementsByTagName('video')[0].currentTime
-      console.log(this.activeTime)
     },1000)
   },
-    // this.$watch() {
-    //
-    // }
   computed: {
   },
   methods: {
@@ -52,13 +46,6 @@ export default {
   watch: {
 
   },
-  setup() {
-    const time = ref(document.getElementsByTagName('video')[0])
-    const news = reactive({
-      time
-    })
-    console.log(news.time)
-  }
 }
 </script>
 
