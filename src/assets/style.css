@@ -51,18 +51,43 @@ h1, h2, h3, h4 {
 /*-----------------------*/
 .text__block {
   width: 737px;
+  max-height: 578px;
   background-color: white;
   border-radius: 12px;
   padding: 24px 24px 20px 24px;
+  overflow-y: scroll;
+}
+.text__block__time {
+  color: #AAA;
+  width: 64px;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 /*-----------------------*/
 .video__box {
   width: 430px;
+  max-height: 278px;
   padding: 20px;
   border-radius: 12px;
   background-color: white;
   margin: 0 17px;
+}
+
+#element::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+#element::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #AAA;
+}
+
+#element::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
 }
 
 .video__player {
